@@ -20,6 +20,7 @@
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>4.13.1</version>
+			<scope>test</scope>
 		</dependency>
 	</dependencies>
 	<build>
@@ -56,8 +57,7 @@
 						<configuration>
 							<finalName>SampleCode</finalName>
 							<transformers>
-								<transformer
-									implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
+								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
 									<mainClass>net.authorize.sample.SampleCode</mainClass>
 								</transformer>
 							</transformers>
@@ -71,8 +71,8 @@
 				<version>2.9</version>
 				<configuration>
 					<includes>
-                        <include>**/*.java</include>
-                    </includes>
+						<include>**/*.java</include>
+					</includes>
 				</configuration>
 			</plugin>
 		</plugins>
